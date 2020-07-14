@@ -24,6 +24,5 @@ function greet(time) {
 }
 /* Write your implementation of displayMessage() */
 function displayMessage(greeting){
-  // document.querySelector("#greeting").textContent = `${greeting}`;
   document.getElementById("greeting").innerText = `${greeting}`;
 }
