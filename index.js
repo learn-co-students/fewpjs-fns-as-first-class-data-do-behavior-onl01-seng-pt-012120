@@ -18,12 +18,12 @@ function handleClick(e) {
 // var pointNum = parseFloat(text);
 
 // function greet(time) {
-// if (time < 1200) {
+// if (time < 12) {
 // return 'Good Morning';
-// } else if( (1200 =< time) && (time <= 1700)) {
+// } else if( (12 =< time) && (time <= 17)) {
 // return 'Good Afternoon';
 // } else {
-//   (time > 1700)
+//   (time > 17)
 // return 'Good Evening';
 // }
 
@@ -33,24 +33,25 @@ function handleClick(e) {
 
 
 function greet(time) {
-  let time= the_time.split(":");
-  let text= time[0].concat(time[1])
-  let result= parseInt(text, 10)
-
   
-if (result < 1200) {
+  let result= parseInt(time, 10)
+  
+if (result < 12) {
 return "Good Morning";
 } 
-else if(result > 1700) {
-return "Good Afternoon";
+else if(result > 17) {
+return "Good Evening";
 }
  else  {
   
-return "Good Evening";
+return "Good Afternoon";
 }
 
 }
-
 
 
 /* Write your implementation of displayMessage() */
+function displayMessage(greet) {
+
+document.getElementById("greeting").innerText = greet
+}
