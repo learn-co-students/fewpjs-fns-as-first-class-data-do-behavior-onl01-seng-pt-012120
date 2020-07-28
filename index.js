@@ -28,6 +28,5 @@ function greet(time) {
 }
 
 function displayMessage(arg) {
-  let content = document.getElementById("greeting");
-  content.textContent = `${arg}`
+  document.getElementById("greeting").innerText = arg
 }
